@@ -1,0 +1,147 @@
+/*APP   */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 170px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body{
+  font-family: 'La Belle Aurore', cursive;
+}
+
+nav ul {
+  margin-bottom: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+
+
+/* NAVIGATION  */
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: lightskyblue;
+}
+
+a:hover {
+  color: lightcyan;
+}
+
+.cart {
+  width: 25px;
+  position: relative;
+  bottom: 5px;
+}
+
+
+
+/* SHOE DISPLAY  */
+.shoeDiv,
+.shoe-container-categories div {
+  width: 40%;
+  list-style-type: none;
+}
+
+.shoe-container-categories div {
+  width: 33%;
+}
+
+.shoe-container-categories {
+  justify-content: space-around;
+}
+
+.shoePic {
+  width: 100px;
+}
+
+.shoeContainer,
+.shoe-container-categories {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shoePic {
+  height: 100px;
+}
+
+.shoeDivDetails {
+  list-style-type: none;
+}
+
+
+
+/* BUTTON STYLING  */
+.add-to-cart-button {
+  width: 12px;
+  position: relative;
+  top: 1px;
+}
+
+.add-button a, 
+.view-details{
+  color: black;
+  cursor: pointer;
+}
+
+button {
+  border: 1px solid orangered;
+  background-color: white;
+  border-radius: 7px;
+  padding: 6px;
+  margin: 3px;
+} 
+
+button:hover { 
+  cursor: pointer;
+}
+
+
+
+/* SHOPPING CART  */
+.cart-item {
+  list-style-type: none;
+  text-align: left;
+  border-bottom: .2px dotted grey;
+}
+
+.cart-item-image {
+  height: 50px;
+}
+
+.cart-name-and-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-price, 
+.cart-total {
+  margin-right: 10%;
+  text-align: right;
+}
