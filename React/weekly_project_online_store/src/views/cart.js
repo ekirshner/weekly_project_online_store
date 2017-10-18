@@ -18,8 +18,6 @@ class Cart extends Component {
 
             let runningTotal = 0;
 
-            console.log( this.props.cartItems);
-
             for (let i = 0; i < this.props.cartItems.length; i++) {
                 runningTotal += parseInt(this.props.cartItems[i].price)
             }

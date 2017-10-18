@@ -25,16 +25,9 @@ class App extends Component {
   }
 
   addShoeToCart(shoe) {
-
-    console.log('shoeList[shoe] console log below')
-    console.log(shoeList[shoe])
-
     this.setState({
       cart: this.state.cart.concat([shoeList[shoe]])
-    }, () => {
-      console.log('console log that should work below')
-      console.log(this.state.cart)
-    });
+    })
   }
 
   render() {
